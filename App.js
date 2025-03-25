@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, TextInput} from "react-native";
+import { View, Text, StyleSheet, TextInput, FlatList} from "react-native";
 
 class App extends Component{
   constructor(props){
     super(props);
     this.state = {
-      nome: ''
+      nome: '',
+      input: ''
     };
 
     this.entradaNome = this.entradaNome.bind(this);
@@ -51,4 +52,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default App
+export default App;
